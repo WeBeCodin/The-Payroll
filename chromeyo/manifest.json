@@ -1,0 +1,28 @@
+{
+  "name": "The Payroll",
+  "description": "Custom Chrome Extension for WallStreet Finish Class",
+  "version": "1.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "third-party/jquery-1.12.4.js",
+        "detectclicks.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "bookmarks",
+    "storage",
+    "scripting",
+    "unlimitedStorage"
+  ],
+  "action": {
+    "default_title": "The Payroll",
+    "default_icon": "icon.png",
+    "default_popup": "popup2.html"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy5Hjn5BDYtngVzsXekpvAPQW7SFpKIM2z/xV4py5XTfOAT5Ln/rEnYfwGNrw6WEZAPo2OsFnSg1ZOpCe7E5NmQVyqbKul9sDwu7wtQ288W8nu2/OoeDfTrfUPSKswTPpA8DbFBLAyYsqLABvg8hpfWRBlKywGSNOAfciJCH13tyUDCMeDWrAbrpdjZDOjTXu7AXLEc5qrAPyLlDisK50THyyCU6BbLttJmIFo3Ymen8UrKkpKsp0ewr5AEDEm4HGgM6/rnAc2Ivpdnt3H3jKv/Ttge9/AkBFvPG0eEgilzkLfydgs1TZp/n4W5Az87LqNH9gN6tJz4z6h+ez3hbmiwIDAQAB"
+}
